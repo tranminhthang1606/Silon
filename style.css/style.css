@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    background-color: rgb(235, 199, 205);
+    display: flex;
+    font-style: oblique;
+}
+.head1 {
+    margin-left: 50px;
+}
+.head2 {
+    padding-left: 500px;
+}
+.head2-1 {
+    padding-left: 30px;
+}
+
+.nav-1-img {
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+.nav-1-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;     
+}
+
+
+.nav-1-title1 {
+    padding-left: 30px;
+    list-style: none;
+    font-weight: bold;
+}
+.nav-1-title-link {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.nav-1-title1:hover .nav-1-title-link {
+    color: palevioletred;
+   font-size: small;
+   transition-duration: 0.5s;
+
+}
+.nav-1-title1:hover .nav-1-home-title{
+    display: block;
+    font-size: x-large;
+}
+.nav-1-home-title1:hover .link1{
+    background-color: gainsboro;
+    color: palevioletred;
+}
+.nav-1-home-title1:hover .link2{
+    background-color: gainsboro;
+    color: palevioletred;
+}
+.nav-1-home-title1:hover .link3{
+    background-color: gainsboro;
+    color: palevioletred;
+}
+.nav-1-icon1 {
+    padding-left: 200px;
+}
+.nav-1-icon {
+    list-style: none;
+
+}
+.nav-1-title-icon {
+    padding-left: 10px;
+    color: black;
+}
+.nav-1-icon:hover .nav-1-title-icon 
+{
+    color: palevioletred;
+}
+.nav-1-home-title {
+    display:none;
+    position: absolute;
+    list-style: none;
+}
+.nav-1-home-link {
+    text-decoration: none;
+    color: black;
+}
+.nav-1-home-title1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+section {
+    height: 400px;
+    background-image: linear-gradient(to right,pink,rgb(216, 89, 111));
+}
+.section-text {
+    padding-top: 100px;
+    padding-left: 300px;
+    width:500px;
+    
+}
+.section-text-1 {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding-bottom: 10px;
+    text-align: justify;
+    color: #565656;
+}
+.section-text-2 {
+    font-family: serif;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.section-text-button {
+    background-color: #ff5353;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    color: white;
+}
+
+.section-text:hover .section-text-button{
+    background-color: whitesmoke;
+    color: rgb(89, 89, 202);
+    transition-duration: 0.8s;
+}
+.section-img{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+
+}
+
+.section1-img1 {
+    position: relative;
+    
+    
+}
+.section1-text1 {
+    padding-top: 150px;
+    text-align: center;
+}
+
+/* <div>
+                  <img class="section1-img1" src="https://demo.themeies.com/silon/images/products/1.jpg" alt="">
+                  <div class="section1-list-stick"></div>
+                  <a class="section1-stick" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+</svg></a>
+                 <a class="section1-stick" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg></a>
+                 <a class="section1-stick" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg></a>
+                  </div>
+              </div> */
+.section1-item {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+.section1-figure {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.action-links {
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    width: 100%;
+    display: none;
+    
+    
+    
+}
+.section1-stick {
+    display: inline-block;
+    font-size: x-large;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.section1-bound {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.content{
+    text-align: center;
+    font-size: larger;
+    
+}
+.content-icon {
+    color: black;
+    text-decoration: none;
+}
+.content-text {
+    color: black;
+    text-decoration: none;
+}
+.content:hover .icon-group {
+    display: block;
+}
+.content:hover .content-icon {
+color: coral;
+}
+
+.section1-figure:hover .action-links {
+    display: block;
+}
+
+.section2 {
+    background-color:blanchedalmond;
+    height: 400px;
+}
+h1 {
+    font-family:"Dancing Script", cursive ;
+    margin-top: 30px;
+    text-transform: lowercase;
+}
+.section2-img1 {
+    position: relative;
+    height: 350px;
+    left: 900px;
+    bottom: 130px;
+
+}
+.section2-text {
+    position: relative;
+    text-align: center;
+    width: 700px;
+    top:100px;
+    font-size: x-large;
+}
+.section2-button {
+    background-color: tomato;
+    color: white;
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+    border: white;
+}
+.section2-text:hover .section2-button {
+    background-color: white;
+    color:cornflowerblue;
+    transition-duration: 0.8s;
+}
+.section-box1 {
+    text-align: center;
+    border-style:ridge;
+    padding: 20px;
+    
+}
+.section-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.section-trending {
+    display: flex;
+    flex-wrap: wrap;
+}
+.treding-tile {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.silon-journal {
+    display: flex;
+    
+}
+.silon-link{
+    text-decoration: none;
+    color: black;
+}
+.slon-box {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.silon-box-link:hover .silon-link {
+    color: coral;
+}
+.insta-icon {
+    position: relative;
+    right: 130px;
+    bottom: 100px;
+
+   
+    
+}
+.img-box:hover .insta-icon {
+    color: palevioletred;
+    transition-duration: 0.8s;
+}
+.collumn {
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    background-color: blanchedalmond;
+}
+.footer-text {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.footer-tile:hover .CHplay{
+    background-color: coral;
+    transition-duration: 0.5s;
+}
+.IOS {
+    background-color: coral;
+    font-family:fantasy ;
+    
+}
+.CHplay {
+    background-color: white;
+    border-style: dotted;
+    font-family: fantasy;
+}
+.footer-icon {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.end {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+
